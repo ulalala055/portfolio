@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #0f0f0f; color: #f0f0f0; }
+    header { padding: 60px 40px; border-bottom: 1px solid #222; }
+    header h1 { font-size: 2.2rem; font-weight: 600; }
+    header p { color: #aaa; margin-top: 8px; font-size: 1rem; }
+    .tag { display: inline-block; background: #1a1a2e; color: #7eb8f7; font-size: 0.75rem; padding: 4px 12px; border-radius: 20px; margin-top: 14px; margin-right: 6px; border: 1px solid #2a2a4a; }
+    section { padding: 48px 40px; border-bottom: 1px solid #222; }
+    section h2 { font-size: 1.1rem; color: #888; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 24px; }
+    .about p { font-size: 1rem; color: #ccc; line-height: 1.8; max-width: 600px; }
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .project-card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px; padding: 20px; }
+    .project-card h3 { font-size: 1rem; font-weight: 500; margin-bottom: 8px; }
+    .project-card p { font-size: 0.85rem; color: #999; line-height: 1.6; }
+    .project-card a { display: inline-block; margin-top: 12px; font-size: 0.8rem; color: #7eb8f7; text-decoration: none; }
+    .skills-list { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 8px; padding: 8px 16px; font-size: 0.85rem; color: #ccc; }
+    .contact p { color: #ccc; font-size: 1rem; line-height: 1.8; }
+    .contact a { color: #7eb8f7; text-decoration: none; }
+    footer { padding: 24px 40px; color: #555; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <p>Final year IT student — learning to build for the web</p>
+    <span class="tag">Open to internships</span>
+    <span class="tag">Kathmandu, Nepal</span>
+  </header>
+
+  <section class="about">
+    <h2>About</h2>
+    <p>I'm a final year IT student passionate about web development. I'm currently building my skills in HTML, CSS, JavaScript, and React — and working on real projects to back it up.</p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>My personal portfolio — built with plain HTML and CSS. The first project in my web dev journey.</p>
+        <a href="https://github.com/ulalala055/portfolio" target="_blank">View on GitHub →</a>
+      </div>
+      <div class="project-card">
+        <h3>More coming soon</h3>
+        <p>Currently learning React. Next project will be a web app using a public API.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript (learning)</span>
+      <span class="skill">Git & GitHub</span>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:youremail@gmail.com">youremail@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/ulalala055" target="_blank">github.com/ulalala055</a></p>
+  </section>
+
+  <footer>Built by Your Name · 2026</footer>
+
+</body>
+</html>
